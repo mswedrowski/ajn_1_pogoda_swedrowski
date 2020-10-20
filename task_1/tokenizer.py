@@ -48,14 +48,31 @@ class Tokenizer():
     def remove_empty_lines(self, text):
         return "\n".join([ll.rstrip() for ll in text.splitlines() if ll.strip()])
 
-
     def split_by_word(self, text):
         return text.replace(' ','\n')
+
+    def split_by_signs(self, text):
+        found_changes = False
+        for sign in self.config.TOKEN_SPLITTING_SIGNS:
+            new_text = []
+            for token in text.splitlines():
+                if sign in token and token.replace(sign, '') != "":
+                    new_tokens = token.split(sign)
+                    new_tokens = f"\n{sign}\n".join(new_tokens)
+
+                    new_text.append(new_tokens)
+                else:
+                    new_text.append(token)
+
+            text = "\n".join(new_text)
+
+        return text
+            
 
     def remove_bad_signs(self,text):
         new_text = ''
         for token in text.splitlines():
-            if token not in self.config.BAD_SIGNS_AS_TOKEN:
+            if token not in self.config.TOKEN_SPLITTING_SIGNS:
                 new_text += f'{token}\n'
         return new_text
 
@@ -65,7 +82,7 @@ class Tokenizer():
         for i in range(len(text)):
             new_text += f'{text[i]}'
             for phrase in self.phrases:
-                p_as_list = phrase.split(' ')
+                p_as_list = phrase.lower().split(' ')
                 if i+1 <= len(text) and text[i] in p_as_list[0] and text[i+1] in p_as_list[1]:
                     new_text += f' {text[i+1]}'
                     i += 1
@@ -87,10 +104,12 @@ class Tokenizer():
         text = self.remove_empty_lines(text)
         text = self.split_by_word(text)
         text = self.add_sentence_separator(text)
+
+        text = self.split_by_signs(text)
+        text = self.remove_empty_lines(text)
+
         if self.config.to_lowercase:
             text = text.lower()
-        if self.config.ignore_bad_signs:
-            text = self.remove_bad_signs(text)
         if self.config.remove_punctuation_marks:
             text =  "\n".join([self.remove_punctuation_marks(w) for w in text.splitlines()])
         if self.config.avoid_splitting_phrases:

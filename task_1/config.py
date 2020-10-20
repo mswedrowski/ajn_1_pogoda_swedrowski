@@ -14,8 +14,8 @@ class Config():
         self.to_lowercase = to_lowercase,
         self.ignore_bad_signs = ignore_bad_signs
 
-        self.DATA_PATH = 'task_1/test_data/'
-        self.DICTIONARIES_DIR = 'task_1/tokenizer_data/'
+        self.DATA_PATH = 'task_1/test_data'
+        self.DICTIONARIES_DIR = 'task_1/tokenizer_data'
         self.SENTENCE_SEPARATOR = '<eos>'
         self.END_OF_SENTENCE_SIGNS = ['!','.','?']
-        self.BAD_SIGNS_AS_TOKEN = ['-','/','–']
+        self.TOKEN_SPLITTING_SIGNS = ['-','/','–', '!','.','?', '(', ')', ',', ':']
