@@ -201,7 +201,7 @@ shqipëria
 
 <eos>
 rdzeń
-alb
+albania
 został
 zaczerpnięty
 z
@@ -621,7 +621,7 @@ rudy
 chromu
 –
 91
-tys
+tysiac
 
 ton
 ,
@@ -635,7 +635,7 @@ ropy
 naftowej
 –
 300
-tys
+tysiac
 
 ton
 ,
@@ -719,13 +719,13 @@ tym
 kukurydzy
 –
 197
-tys
+tysiac
 
 ton
 ,
 pszenicy
 295
-tys
+tysiac
 
 ton
 ,
@@ -734,7 +734,7 @@ słoneczników
 tytoniu
 –
 5
-tys
+tysiac
 
 ton
 ,
@@ -747,14 +747,14 @@ owocowych
 oliwek
 –
 27
-tys
+tysiac
 
 ton
 i
 winorośli
 –
 83
-tys
+tysiac
 
 ton
 
@@ -777,7 +777,7 @@ wełny
 3
 ,
 8
-tys
+tysiac
 
 ton
 )
@@ -799,7 +799,7 @@ z
 16
 ,
 8
-tys
+tysiac
 
 km
 dróg
@@ -834,7 +834,7 @@ w
 albanii
 było
 190
-tys
+tysiac
 
 samochodów
 osobowych
@@ -972,7 +972,7 @@ na
 12
 obwodów
 (
-alb
+albania
 
 <eos>
 qark
@@ -985,7 +985,7 @@ z
 36
 okręgów
 (
-alb
+albania
 
 <eos>
 rreth
@@ -2713,14 +2713,14 @@ kosowie
 ,
 ponad
 200
-tys
+tysiac
  w
 w
 grecji
 i
 przeszło
 170
-tys
+tysiac
 
 we
 włoszech
@@ -2959,7 +2959,7 @@ tirana
 386
 ,
 03
-tys
+tysiac
 
 ;
 <eos>
@@ -2968,7 +2968,7 @@ durrës
 126
 ,
 25
-tys
+tysiac
 
 ;
 <eos>
@@ -2977,7 +2977,7 @@ elbasan
 103
 ,
 60
-tys
+tysiac
 
 ;
 <eos>
@@ -2986,7 +2986,7 @@ wlora
 91
 ,
 71
-tys
+tysiac
  i
 i
 szkodra
@@ -2994,7 +2994,7 @@ szkodra
 89
 ,
 44
-tys
+tysiac
 
 albania
 dzieli
@@ -3099,7 +3099,7 @@ islam
 2%
 (
 2083
-tys
+tysiac
 
 osób
 )
@@ -3113,7 +3113,7 @@ chrześcijaństwo
 8%
 (
 1001
-tys
+tysiac
 
 osób
 )
@@ -3128,7 +3128,7 @@ katolicyzm
 1%
 (
 490
-tys
+tysiac
 
 osób
 )
@@ -3142,7 +3142,7 @@ prawosławie
 6%
 (
 475
-tys
+tysiac
 
 osób
 )
@@ -3161,7 +3161,7 @@ jehowy
 9%
 (
 30
-tys
+tysiac
 
 osób
 )
@@ -3175,7 +3175,7 @@ agnostycyzm
 2%
 (
 135
-tys
+tysiac
 
 osób
 )
@@ -3189,7 +3189,7 @@ ateizm
 6%
 (
 18
-tys
+tysiac
 
 osób
 )
@@ -3203,7 +3203,7 @@ bahaizm
 2%
 (
 8
-tys
+tysiac
 
 osób
 )
@@ -3597,7 +3597,7 @@ z
 jęz
 
 <eos>
-alb
+albania
 
 ,
 <eos>

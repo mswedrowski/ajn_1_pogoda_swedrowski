@@ -102,7 +102,10 @@ class Tokenizer():
 
     def tokenize(self,text:str):
         text = self.remove_empty_lines(text)
+
         text = self.split_by_word(text)
+        text = self.remove_empty_lines(text)
+
         text = self.add_sentence_separator(text)
 
         text = self.split_by_signs(text)
@@ -114,6 +117,8 @@ class Tokenizer():
             text =  "\n".join([self.remove_punctuation_marks(w) for w in text.splitlines()])
         if self.config.avoid_splitting_phrases:
             text = self.merge_phrases(text)
+        if self.config.convert_abbreviations:
+            text = self.convert_abbreviations(text)
 
         return text
 
