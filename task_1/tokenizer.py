@@ -36,7 +36,6 @@ class Tokenizer():
                 return True
         return False 
 
-
     def add_sentence_separator(self, text):
         new_text = ''
         for word in text.splitlines():
@@ -121,6 +120,11 @@ class Tokenizer():
             text = self.convert_abbreviations(text)
 
         return text
+
+# Maca
+# wcrft2
+# morphodita
+# cmc
 
 if __name__ == "__main__":
 
