@@ -18,3 +18,4 @@ RUN make -j
 RUN make -j
 RUN make install
 RUN ldconfig
+RUN printf "dig\nromandig" >>  /usr/local/share/corpus2/nkjp.tagset

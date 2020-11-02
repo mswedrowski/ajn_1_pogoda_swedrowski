@@ -495,8 +495,8 @@ def go():
 		ref_fn = args[fold_idx + num_folds] # ... reference fold @ fold_idx
 		if options.verbose:
 			print '### FOLD %2d: %s (tag) v. %s (ref)' % ((fold_idx + 1), tag_fn, ref_fn)
-		tag_rdr = corpus2.TokenReader.create_path_reader(options.input_format, tagset, tag_fn)
-		ref_rdr = corpus2.TokenReader.create_path_reader(options.input_format, tagset, ref_fn)
+		tag_rdr = corpus2.TokenReader.create_path_reader("ccl", tagset, tag_fn)
+		ref_rdr = corpus2.TokenReader.create_path_reader("xces", tagset, ref_fn)
 		
 		res = TokComp(
 			tagset, options.unk_tag, options.expand_optional,
