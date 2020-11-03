@@ -1,20 +1,8 @@
-### [C]
-
-```
-Micha l Pogoda
-Micha l Swedrowski
-```
-## Lista 1
-
-```
-Analiza jezyka naturalnego, 19/
-November 3, 2020
-```
 # 1 Budowa w lasnego tokenizatora
 
 ## 1.1 Cel
 
-Celeme zadania jest zbudowanie tokenizatora, pozwalajacego segmentowa ́c ciag ly tekst na pojedy ́ncze
+Celem zadania jest zbudowanie tokenizatora, pozwalajacego segmentowa ́c ciag ly tekst na pojedy ́ncze
 tokeny. Token jest pojedy ́nczym s lowem lub wyra ̇zeniem i w tek ́scie poddanym tokenizacji kazdy zaczyna
 sie od nowej linii. Koniec ka ̇zdego zdania jest oznaczony znakiem< eos >.
 
@@ -82,9 +70,9 @@ oparty na regu lach mo ̇ze by ́c niezwykle efektywny. Segmentacja tekstu na po
 jest trudniejszym zadaniem ni ̇z segmentacja na pojedy ́ncze tokeny.
 
 
-# 2 Por ́ownanie Tagger ́ow
+# 2 Porownanie Taggerow
 
-## 2.1 U ̇zyte taggery
+## 2.1 Użyte taggery
 
 Do zadania u ̇zyto tager ́ow :
 
@@ -135,11 +123,7 @@ tywnie wybra ́c kt ́ory jest lepszy. Tagger WCRFT uzyska l znaczaco lepsza dok
 miast CMCT lepiej poradzi l sobie w zadaniu ̈Part-Of-Speech tagging ̈.
 
 
-# 3 Por ́ownanie wp lywu dzia lania poszczeg ́olnych tager ́ow jako
-
-# narzedzi wstepnego przetwarzania tekstu na wyniki klasy-
-
-# fikacji
+# 3 Porownanie wpływu działania poszczegolnych tagerow jak narzedzi wstepnego przetwarzania tekstu na wyniki klasyfikacji
 
 ## 3.1 Grupowanie klas gramatycznych
 
@@ -180,7 +164,7 @@ Precision 88.00% 88.00% 88.00%
 Recall Accuracy 87.00% 87.00% 86.00%
 F-score 88.00% 86.00% 86.00%
 ```
-Table 2: Wyniki klasyfikacji kategorii tekst ́ow uzyskanych za pomoca badanych tagger ́ow na postawie
+Table 2: Wyniki klasyfikacji kategorii tekst ́ow uzyskanych za pomoca badanych taggerow na postawie
 rzeczownik ́ow
 
 ```
@@ -189,8 +173,8 @@ Precision 52.00% 52.00% 52.00%
 Recall Accuracy 42.00% 43.00% 42.00%
 F-score 41.00% 42.00% 41.00%
 ```
-Table 3: Wyniki klasyfikacji kategorii tekst ́ow uzyskanych za pomoca badanych tagger ́ow na postawie
-czasownik ́ow
+Table 3: Wyniki klasyfikacji kategorii tekstow uzyskanych za pomoca badanych taggerow na postawie
+czasownikow
 
 ```
 Metryka Morphodita WCRFT CMCT
@@ -204,11 +188,11 @@ przymiotnik ́ow
 
 ## 3.3 Podsumowanie
 
-Jak mo ̇zna zauwa ̇zy ́c, klasyfikowanie tekst ́ow na podstawie rzeczownik ́ow daje najlepsze efekty. Wydaje
+Jak mozna zauwazyc, klasyfikowanie tekst ́ow na podstawie rzeczownik ́ow daje najlepsze efekty. Wydaje
 sie to by ́c naturalne, z uwagi na fakt, ̇ze rzeczowniki dla poszczeg ́olnych temat ́ow sa zazwyczaj r ́o ̇zne,
-czego nie mo ̇zna powiedzie ́c o czasownikach (przyk ladowo czasownik by ́c, kt ́ory z du ̇zym prawdopodobie ́nstwem
-bedzie wystepowa l w ca lym tek ́scie. Klasyfikacja tekstu przy pomocy przymiotnik ́ow r ́ownie ̇z jest
-znacznie efektywniejsza ni ̇z przy pomocy rzeczownik ́ow, co zdaje sie by ́c pochodna zale ̇zno ́sci pomiedzy
+czego nie mo ̇zna powiedzie ́c o czasownikach (przyk ladowo czasownik byc, ktory z duzym prawdopodobienstwem
+bedzie wystepowal w calym tekscie. Klasyfikacja tekstu przy pomocy przymiotnikow rowniez jest
+znacznie efektywniejsza niz przy pomocy rzeczownikow, co zdaje sie byc pochodna zaleznosci pomiedzy
 rzeczownikami a czasownikami.
 
 
